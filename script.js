@@ -2,18 +2,26 @@
 // isNumberPositive(-1); // returns false
 // isNumberPositive(10); // returns true
 
-function isNumberPositive(-1) {
-    if (number > 0){
+function isNumberPositive(number) {
+    if (number > 0) {
         return true
     } else {
         return false;
     }
 }
 
+console.log(isNumberPositive(-0));
+console.log(isNumberPositive(10));
 
 // 2. Write a function that takes a number of days and converts it into an age.
 // convertDaysToAge(3650); // returns 10
 // convertDaysToAge(6570); // returns 18
+
+function convertDaysToAge(days) {
+    const daysInYear = 365;
+ 
+}
+
 
 
 // 3. Write a function that takes three numbers and returns the largest of the three numbers.
