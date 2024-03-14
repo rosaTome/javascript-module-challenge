@@ -19,10 +19,12 @@ console.log(isNumberPositive(10));
 
 function convertDaysToAge(days) {
     const daysInYear = 365;
- 
+    const age = days / daysInYear;
+    return age;
 }
 
-
+console.log(convertDaysToAge(3650));
+console.log(convertDaysToAge(6570));
 
 // 3. Write a function that takes three numbers and returns the largest of the three numbers.
 // getLargestNumber(2 ,1, 4); // returns 4
