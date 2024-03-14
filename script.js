@@ -48,6 +48,7 @@ console.log(getLargestNumber(6, 2, 3));
 // getLastName([”Charlie”, “Rob”, “Andy”]); // returns “Andy”
 // getLastName(["Ash","Stu"]); // returns "Stu"
 
+// Array of input names and returns last name from array using name.length method
 function getLastName(names) {
     return names[names.length - 1];
 }
@@ -58,3 +59,16 @@ console.log(getLastName(["Ash", "Stu"]));
 // allNumbersPositive([2,4,5]); // returns true
 // allNumbersPositive([-5,4,6]); // returns false
 
+function allNumbersPositive(numbers) {
+    for (let index = 0; index < numbers.length; index++) {
+
+        // if negative number(s) - return false 
+        if (numbers[index] < 0) {
+            return false;
+        }
+    }
+    // no negative number(s) - return true
+    return true;
+}
+console.log(allNumbersPositive([2, 4, 5]));
+console.log(allNumbersPositive([-5, 4, 6]));
