@@ -30,9 +30,24 @@ console.log(convertDaysToAge(6570));
 // getLargestNumber(2 ,1, 4); // returns 4
 // getLargestNumber(6,2,3); // returns 6
 
+function getLargestNumber(num1, num2, num3) {
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    }
+
+    if (num2 >= num3) {
+        return num2
+    }
+    return num3;
+}
+console.log(getLargestNumber(2, 1, 4));
+console.log(getLargestNumber(6, 2, 3));
+
 // 4. Write a function that takes an array of names and returns the last name from the array of names.
 // getLastName([”Charlie”, “Rob”, “Andy”]); // returns “Andy”
 // getLastName(["Ash","Stu"]); // returns "Stu"
+
+
 
 // 5. Write a function that takes an array of numbers and returns true if all of the numbers are positive. It should return false if there are one or more negative numbers in the array.
 // allNumbersPositive([2,4,5]); // returns true
